@@ -11,7 +11,7 @@ services:
   postgres:
     image: blackducksoftware/blackduck-postgres:11-2.11
     ports: ['55436:5432']
-    volumes: ['postgres96-data-volume:/bitnami/postgresql' ]
+    volumes: ['postgres96-data-volume:/bitnam/postgresql' ]
     env_file: [blackduck-config.env]
     healthcheck:
       test: [CMD, /usr/local/bin/docker-healthcheck.sh]
@@ -41,7 +41,7 @@ services:
     user: authentication:root
     image: blackducksoftware/blackduck-authentication:2022.4.2
     volumes:
-    - authetication-volume:/opt/blackduck/hub/hub-authentication/ldap
+    - authentication-volume:/opt/blackduck/hub/hub-authentication/ldap
     - {type: tmpfs, target: /opt/blackduck/hub/hub-authentication/security}
     env_file: [blackduck-config.env ]
     healthcheck:
