@@ -2,7 +2,7 @@ exercise="exercise$1";
 stack=hub-exercise
 if [ -d $exercise ]
 then
-  if [ $1 = "5" ]
+  if [ $1 = "3" ]
   then
     docker secret create hub-exercise_WEBSERVER_CUSTOM_CERT_FILE $exercise/cert.cer
     docker secret create hub-exercise_WEBSERVER_CUSTOM_KEY_FILE $exercise/key.pem
