@@ -91,7 +91,7 @@ secrets:
 #    name: "hub_PROXY_PASSWORD_FILE"
   WEBSERVER_CUSTOM_CERT_FILE:
     external: true
-    name: "hub_WEBSERVER_CUSTOM_CERT_FILE"
+    name: "hub-exercise_WEBSERVER_CUSTOM_CERT_FILE"
   WEBSERVER_CUSTOM_KEY_FILE:
     external: true
     name: "hub-exercise_WEBSERVER_CUSTOM_KEY_FILE"
