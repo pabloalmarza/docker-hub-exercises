@@ -9,3 +9,4 @@ do
 done
 
 sleep 6
+docker volume rm $(docker volume ls -q | grep $stack)
