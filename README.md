@@ -5,7 +5,7 @@ Bundle of exercises for BlackDuck troubleshooting on Docker
 
 ## Requirements
 
-All the scenarios use the same resource and software requirements as BD 2022.4.2 with the 10sph.yaml sizing (34 Gb, 10 Gb of disk space at least).
+All the scenarios use the same resource and software requirements as BD 2022.4.2 with the 10sph.yaml sizing (34 Gb, with only 10 Gb of disk space really required).
 Running the process as root is recomended
 
 ## Restrictions
@@ -39,3 +39,17 @@ To end the scenario and delete the stack and associated elements created, just u
 ```
 
 Note: the outputs of the scripts both to create and delte the scnearios are not optimized, so plenty warnings or messages may be displayed, just ignore them
+
+## Completing an scenario
+
+The end goal for each scenario is to be able to upload the test.bdio file on the UI and see the list of results in the BOM. The list will contain 7 components.
+
+The deployment files used for each scenario are included in the individual folder, but it is recommended to try to reach the solution or as close as possible to the solution based on other methods, as these scenarios are designed to simulate real world problems where hte problem itself will not be evident.
+Each scenario folder contains also a file with the explanation and a possible route to reach it. 
+
+## Difficulty
+
+Each scenario has a different difficulty level and therefore a recommended audience, even if you're a novice you can try to have a go at the last one.
+
+
+
