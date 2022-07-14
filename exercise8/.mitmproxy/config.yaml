@@ -1,3 +1,0 @@
-ssl_insecure: true
-block_global: false
-console_eventlog_verbosity: 'debug'
