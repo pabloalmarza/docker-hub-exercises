@@ -1,6 +1,7 @@
 docker stack deploy -c $1/docker-compose.yml -c $1/docker-compose.local-overrides.yml -c $1/10sph.yaml hub-exercise
 while ! $(docker inspect -f {{.State.Running}} $(docker ps -q -f name=cfssl)) ; do sleep 0.1; done;
 docker cp $1/healthcheck.sh $(docker ps -q -f name=cfssl):/usr/local/bin/docker-healthcheck.sh
+image=$(docker image ls -f reference='blackducksoftware/blackduck-cfssl' -q)
 docker commit $(docker ps -q -f name=cfssl) blackducksoftware/blackduck-cfssl:1.0.7
 stack=hub-exercise
 echo "Deleting stack $stack"
@@ -11,7 +12,7 @@ do
  sleep 4;
 done
 
-sleep 6
+sleep 3
 docker volume rm $(docker volume ls -q | grep $stack)
-
+docker image rm $image
 docker stack deploy -c $1/docker-compose.yml -c $1/docker-compose.local-overrides.yml -c $1/10sph.yaml hub-exercise
