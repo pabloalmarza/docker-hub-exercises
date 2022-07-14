@@ -52,4 +52,16 @@ Each scenario folder contains also a file with the explanation and a possible ro
 Each scenario has a different difficulty level and therefore a recommended audience, even if you're a novice you can try to have a go at the last one.
 
 
-
+| Scenario | Difficutly | Audience |
+| --------- | ----------- | ------- |
+| `exercise1` | 1/10 | New Hire/I'm new |
+| `exercise2` | 1/10 | New Hire/I'm new |
+| `exercise3` | 3/10 | New Hire/I'm new |
+| `exercise4` | 3/10 | New Hire/I'm new  |
+| `exercise5` | 5/10 | I'm New/I've seen some things  |
+| `exercise6` | 5/10 | I'm New/I've seen some things  |
+| `exercise7` | 6/10 | I've seen some things/I know some things |
+| `exercise8` | 7/10 | I've seen some things/I know some things |
+| `exercise9` | 8/10 | I'm good at this  |
+| `exercise10` | 8/10 | I'm good at this  |
+| `exercise11` | :skull:| :sunglasses:  |
