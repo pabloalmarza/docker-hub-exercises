@@ -2,7 +2,7 @@ stack=hub-exercise
 echo "Deleting stack $stack"
 docker stack rm $stack
 docker secret rm $(docker secret ls --filter name=$stack -q)
-docker image rm blackducksoftware/blackduck-cfssl:1.0.7
+docker image rm $(docker image ls -f reference='blackducksoftware/blackduck-cfssl' -q)
 while [[ $(docker ps | grep hub-exercise | wc -l) != "0" ]] ;
 do
  echo $(docker ps | grep hub-exercise | wc -l) "Containers still active"
