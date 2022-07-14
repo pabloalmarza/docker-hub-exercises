@@ -10,3 +10,4 @@ done
 
 sleep 6
 docker volume rm $(docker volume ls -q | grep $stack)
+docker kill $(docker ps  -f ancestor=mitmproxy/mitmproxy -q)
