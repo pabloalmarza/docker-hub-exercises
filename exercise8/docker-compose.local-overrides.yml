@@ -69,23 +69,24 @@ services:
   #uploadcache:
     #secrets:
     #  - SEAL_KEY
-  bomengine:
+  #bomengine:
     #environment:
     #  HUB_MAX_MEMORY: REPLACE_WITH_NEW_HUB_MAX_HEAP_MEMORYm
     #  HUB_MIN_MEMORY: REPLACE_WITH_NEW_HUB_MIN_HEAP_MEMORYm
-    secrets:
-      - HUB_PROXY_CERT_FILE
+    #secrets:
+    #  - HUB_PROXY_CERT_FILE
     #  - HUB_PROXY_PASSWORD_FILE
     #deploy:
     #  resources:
     #    limits: {cpus: 'REPLACE_WITH_NUM_CPUS', memory: REPLACE_WITH_NEW_MEM_LIMITm}
     #    reservations: {cpus: 'REPLACE_WITH_NUM_CPUS', memory: REPLACE_WITH_NEW_MEM_LIMITm}
     #  replicas: REPLACE_WITH_NUM_REPLICAS
-  #matchengine:
+  matchengine:
     #environment:
     #  HUB_MAX_MEMORY: REPLACE_WITH_NEW_HUB_MAX_HEAP_MEMORYm
     #  HUB_MIN_MEMORY: REPLACE_WITH_NEW_HUB_MIN_HEAP_MEMORYm
-    #secrets:
+    secrets:
+      - HUB_PROXY_CERT_FILE
     #  - HUB_PROXY_PASSWORD_FILE
     #deploy:
     #  resources:
