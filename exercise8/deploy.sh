@@ -4,5 +4,5 @@ docker run -d --rm -v $PWD/$1/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080
 while ! $(docker inspect -f {{.State.Running}} $(docker ps  -f ancestor=mitmproxy/mitmproxy -q)) ; do sleep 0.1; done;
 sleep 5
 docker secret create hub-exercise_HUB_PROXY_CERT_FILE $PWD/$1/.mitmproxy/mitmproxy-ca-cert.pem
-sed -i 's/sEMPTY/$(hostname)/' $1/blackduck-config.env
+sed -i "s/EMPTY/$HOSTNAME/g" $1/blackduck-config.env
 docker stack deploy -c $1/docker-compose.yml -c $1/docker-compose.local-overrides.yml -c $1/10sph.yaml hub-exercise
