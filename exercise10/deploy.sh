@@ -17,4 +17,5 @@ sleep 3
 docker volume rm $(docker volume ls -q | grep $stack)
 docker image rm $(docker image ls -f reference='blackducksoftware/blackduck-cfssl' -q)
 docker load -i cfssl.tar
+docker image tag $(docker images -a '--format={{.ID}}' -q | head -n 1) blackducksoftware/blackduck-cfssl:1.0.7
 docker stack deploy -c $1/docker-compose.yml -c $1/docker-compose.local-overrides.yml -c $1/10sph.yaml hub-exercise
