@@ -10,4 +10,3 @@ done
 
 sleep 6
 docker volume rm $(docker volume ls -q | grep $stack)
-docker image rm $(docker image ls -f reference='blackducksoftware/blackduck-cfssl' -q)
