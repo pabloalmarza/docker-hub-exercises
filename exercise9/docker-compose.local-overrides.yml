@@ -95,9 +95,8 @@ services:
     #  replicas: REPLACE_WITH_NUM_REPLICAS
 secrets:
   HUB_PROXY_CERT_FILE:
-     external:
-       external: true
-       name: "hub-exercise_HUB_PROXY_CERT_FILE"
+      external: true
+      name: "hub-exercise_HUB_PROXY_CERT_FILE"
 #  HUB_PROXY_PASSWORD_FILE:
 #    external: true
 #    name: "hub_PROXY_PASSWORD_FILE"
