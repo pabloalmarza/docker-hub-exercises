@@ -22,20 +22,19 @@ git clone https://github.com/pabloalmarza/docker-hub-exercises.git
 ```
 ```
 cd docker-hub-exercises
-chmod 777 deploy.sh delete.sh
 ```
 
 To start an scenario, just run the deploy script with the number of the scenario. For example, to launch scenario 1:
 
 
 ```
-./deploy.sh 1
+./deploy 1
 ```
 
 To end the scenario and delete the stack and associated elements created, just use the delete script:
 
 ```
-./delete.sh
+./delete
 ```
 
 Note: the outputs of the scripts both to create and delte the scnearios are not optimized, so plenty warnings or messages may be displayed, just ignore them
@@ -45,7 +44,7 @@ Note: the outputs of the scripts both to create and delte the scnearios are not 
 The end goal for each scenario is to be able to upload the test.bdio file on the UI and see the list of results in the BOM. The list will contain 7 components.
 
 The deployment files used for each scenario are included in the individual folder, but it is recommended to try to reach the solution or as close as possible to the solution based on other methods, as these scenarios are designed to simulate real world problems where hte problem itself will not be evident.
-Each scenario folder contains also a file with the explanation and a possible route to reach it. 
+
 
 ## Difficulty
 
