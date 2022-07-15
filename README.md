@@ -22,6 +22,7 @@ git clone https://github.com/pabloalmarza/docker-hub-exercises.git
 ```
 ```
 cd docker-hub-exercises
+chmod 777 delete deploy
 ```
 
 To start an scenario, just run the deploy script with the number of the scenario. For example, to launch scenario 1:
