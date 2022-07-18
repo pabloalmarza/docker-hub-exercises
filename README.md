@@ -40,6 +40,10 @@ To end the scenario and delete the stack and associated elements created, just u
 
 Note: the outputs of the scripts both to create and delte the scnearios are not optimized, so plenty warnings or messages may be displayed, just ignore them
 
+## Exercise 0
+
+Exercise 0 is just a healthy stack that can be used to verify the actual exepected end result of the scan process
+
 ## Completing an scenario
 
 The end goal for each scenario is to be able to upload the test.bdio file on the UI and see the list of results in the BOM. The list will contain 7 components.
@@ -54,6 +58,7 @@ Each scenario has a different difficulty level and therefore a recommended audie
 
 | Scenario | Difficutly | Audience |
 | --------- | ----------- | ------- |
+| `exercise0` | 0/10 | Benchmark |
 | `exercise1` | 1/10 | New Hire/I'm new |
 | `exercise2` | 1/10 | New Hire/I'm new |
 | `exercise3` | 3/10 | New Hire/I'm new |
