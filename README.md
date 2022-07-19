@@ -48,7 +48,8 @@ Exercise 0 is just a healthy stack that can be used to verify the actual exepect
 
 The end goal for each scenario is to be able to upload the test.bdio file on the UI and see the list of results in the BOM. The list will contain 7 components.
 
-The deployment files used for each scenario are included in the individual folder, but it is recommended to try to reach the solution or as close as possible to the solution based on other methods, as these scenarios are designed to simulate real world problems where hte problem itself will not be evident.
+The deployment files used for each scenario are included in the individual folder, but it is recommended to try to diagnose the problem without looking into them and based on other methods, as these scenarios are designed to simulate real world problems where hte problem itself will not be evident.
+Once the problem has been diagnosed, try to correct it by correcting the existing charts and files if possible.
 
 
 ## Difficulty
